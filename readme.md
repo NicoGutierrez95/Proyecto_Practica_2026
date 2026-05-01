@@ -68,3 +68,12 @@ El sistema debe permitir
 - Consultar historial de asistencias.
 - Visualizar listados de alumnos por curso y división.
 - Registrar múltiples asistencias en un mismo día.
+
+### Script de cálculo de edad
+Este script permite calcular la edad de una persona a partir de su año de nacimiento.
+### Como ejecutarlo
+1. tener visual studio code y python instalado
+2. ejecutar en terminal
+3. ingresar tu año de nacimiento.
+4. ingresar el año actual.
+
