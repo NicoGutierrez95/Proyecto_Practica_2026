@@ -23,3 +23,12 @@ Desarrollar un sistema de asistencia digital propio para la institución, o inst
 
 - Alcance del proyecto
 El sistema cubrirá la totalidad de los cursos de la Escuela Técnica N°1 abarcando su doble turno (teoría y talleres) y hasta, en algunos casos, triple asistencia diaria (algunos días de la semana el alumno tendrá educación física sumada a teoría y talleres) de cada alumno, permitiendo pasar lista y registrar la asistencia desde los teléfonos celulares tanto de preceptores como de profesores.
+
+Cronograma de actividades
+Estudio de factibilidad 
+Tecnica
+Economica
+Operativa
+Requerimientos Funcionales
+Requisitos generales
+Requisitos funcionales
