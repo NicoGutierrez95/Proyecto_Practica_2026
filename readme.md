@@ -70,10 +70,57 @@ El sistema debe permitir
 - Registrar múltiples asistencias en un mismo día.
 
 ### Script de cálculo de edad
+
 Este script permite calcular la edad de una persona a partir de su año de nacimiento.
+
 ### Como ejecutarlo
+
 1. tener visual studio code y python instalado
 2. ejecutar en terminal
 3. ingresar tu año de nacimiento.
 4. ingresar el año actual.
 
+### Diseño
+
+- Modelo de datos: El sistema se plantea como una aplicación web y móvil que permite a docentes y preceptores registrar la asistencia de los alumnos, con frontend hecho en Flutter y backend hecho en Laravel, además de MySQL para la base de datos.
+  1. Datos de entrada: Información de los alumnos (nombre, apellido, DNI, curso y división). Información de docentes y preceptores (nombre, rol, cursos y divisiones asignados, asignaturas de taller). Registro de asistencia diaria (fecha, asignatura, presente, ausente, tardanza, justificado).
+  2. Datos internos: Tabla de usuarios, tabla de alumnos vinculada a cursos y divisiones, tabla de clases de taller vinculada a curso (año escolar) y grupo, relación entre alumnos y asistencia (historial).
+  3. Datos de salida: reportes de asistencia por curso y división, listado de alumnos con cantidad de inasistencias acumuladas, notificaciones internas para el personal administrativo.
+
+### Base de Datos
+
+1. Tabla usuarios: id_usuario, nombre, rol, email, correo.
+2. Tabla alumnos: id_alumno, nombre, apellido, curso, división.
+3. Tabla clases: id_clase (teoria, taller, educación física), encargado_asistencia (prof. taller, prof. ed. física, preceptor) fecha.
+4. Tabla asistencias: id_asistencia, id_alumno, id_clase, estado (presente, ausente, tardanza, justificado)
+
+### Dependencias
+
+1. Framework Laravel (PHP)
+2. Flutter para app móvil y web
+3. MySQL, motor de base de datos
+
+### Software (herramientas)
+
+1.  Visual Studio Code
+2.  Git + GitHub
+3.  Laragon, para servidor local
+4.  Android Studio para pruebas móviles
+
+### Procedimiento de instalación
+
+1. Instalar dependecias de Laravel y Flutter
+2. Configurar base de datos MySQL
+3. Ejecutar migraciones.
+4. Levantar servidor local con Laragon o Laravel Artisan
+
+### Procedimientos de testing
+
+1.  Pruebas en Laravel y Flutter
+2.  Validación de roles y permisos.
+3.  Carga de datos y generación de reportes.
+
+### Git Branch-D
+Función: Elimina una rama local de manera forzada
+
+Sintaxis: git branch -D nombre_rama
